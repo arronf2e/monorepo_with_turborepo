@@ -6,7 +6,7 @@ import { type Blog } from '@tm/types';
 
 const blogs = ref<Blog[]>([])
 
-axios.get('https://localhost:8009/blogs').then(result => {
+axios.get('http://localhost:8009/blogs').then(result => {
   blogs.value = result.data.blogs;
 })
 </script>

@@ -6,6 +6,8 @@ import { Blog } from '@tm/types'
 const app = express()
 const port = process.env.PORT || 8009
 
+app.use(cors())
+
 app.get('/blogs', (req, res) => {
   const blogs: Blog[] = [
     { id: '1', title: 'Blog 1', content: 'Content 1' },
