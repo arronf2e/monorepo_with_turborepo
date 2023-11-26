@@ -1,7 +1,13 @@
 [TurboRepo](https://turbo.build/repo)
 
-### start dev
+### dev
 
 ```shell
 npx turbo run dev
+```
+
+### build
+
+```shell
+npx turbo run build
 ```
